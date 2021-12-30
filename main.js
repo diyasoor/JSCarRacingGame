@@ -38,7 +38,7 @@ const isCollide = (a,b) => {
 const end = () => {
     player.start = false;
     startSreen.classList.remove('hide');
-    startSreen.innerHTML = "Game Over <br> Your final score is: " + player.score + "<br> Press here to restart the Game.";
+    startSreen.innerHTML = "Game Over <br> Your final score is: " + player.score + "<br> Press here to restart the Game. <br> Diya Soor &copy; 2021";
 }
 
 const moveLines = () => {
