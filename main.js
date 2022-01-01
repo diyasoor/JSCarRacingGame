@@ -125,6 +125,7 @@ const start = () => {
     // gameArea.classList.remove('hide');
     startSreen.classList.add('hide');
     gameArea.innerHTML = "";
+    let road = gameArea.getBoundingClientRect();
 
     player.start = true;
     player.score = 0;
@@ -134,6 +135,7 @@ const start = () => {
         let roadLine = document.createElement('div');
         roadLine.setAttribute('class', 'lines');
         roadLine.y = (x*150);
+        lines.style.marginLeft =  ((road.width/2) - 5 ) + "px";
         roadLine.style.top = roadLine.y + "px";
         gameArea.appendChild(roadLine);
     }
